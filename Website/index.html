@@ -1,21 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Diogo Silva | Marketing & Digital</title>
-  <meta name="description" content="Portfólio de Diogo Silva com projetos em SEO, marketing de conteúdo, email marketing, web e comunicação digital." />
-  <meta property="og:title" content="Diogo Silva | Marketing & Digital" />
-  <meta property="og:description" content="SEO, Marketing de Conteúdo, Email Marketing e projetos digitais." />
+  <title>Diogo Silva | Marketing Digital & Web — Porto</title>
+  <meta name="description" content="Portfólio de Diogo Silva: SEO, marketing de conteúdo, email marketing e web design. Baseado no Porto, Portugal." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://diogoafonsosilva.github.io/web-designs/Website/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diogo Silva | Marketing Digital & Web" />
+  <meta property="og:description" content="SEO, Marketing de Conteúdo, Email Marketing e projetos digitais. Porto, Portugal." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://diogoafonsosilva.github.io/web-designs/Website/" />
+  <meta property="og:image" content="assets/img/linkedin-foto-nova.png" />
+  <meta property="og:locale" content="pt_PT" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diogo Silva | Marketing Digital & Web" />
+  <meta name="twitter:description" content="SEO, Marketing de Conteúdo, Email Marketing e projetos digitais." />
+  <meta name="twitter:image" content="assets/img/linkedin-foto-nova.png" />
+
+  <!-- Performance: preload hero photo -->
+  <link rel="preload" as="image" href="assets/img/linkedin-foto-nova.png" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Diogo Silva",
+    "jobTitle": "Marketing Digital",
+    "description": "SEO, Marketing de Conteúdo, Email Marketing e projetos web.",
+    "url": "https://diogoafonsosilva.github.io/web-designs/Website/",
+    "sameAs": [
+      "https://linkedin.com/in/diogoafonsosilva",
+      "https://www.behance.net/diogoafonsosilva"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Porto",
+      "addressCountry": "PT"
+    }
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
   <style>
+    /* ← All base styles moved to assets/css/style.css */
+    /*
     :root {
       --bg: #050505;
       --bg-soft: #0b0b0d;
@@ -682,6 +721,7 @@
       .mini-card.top-right { right: 0; top: 24px; }
       .mini-card.bottom-left { left: 0; bottom: 24px; }
     }
+    */
   </style>
 </head>
 <body>
@@ -762,7 +802,7 @@
               <div class="dots"><span></span><span></span><span></span></div>
             </div>
             <div class="photo-frame">
-              <img src="imagens/linkedin-foto-nova.png" alt="Diogo Silva" class="hero-photo" />
+              <img src="assets/img/linkedin-foto-nova.png" alt="Diogo Silva" class="hero-photo" />
             </div>
           </div>
         </div>
@@ -784,7 +824,7 @@
 
         <!-- McLaren -->
         <article class="project-card">
-          <img src="imagens/McLarenProject.jpeg" alt="Projeto McLaren" class="project-img" />
+          <img src="assets/img/McLarenProject.jpeg" loading="lazy" alt="Projeto McLaren" class="project-img" />
           <div class="project-overlay"></div>
           <div class="project-content">
             <span class="project-type">Visual · Storytelling · Brand</span>
@@ -797,7 +837,7 @@
               <span>Design visual</span>
               <span>Brand presence</span>
             </div>
-            <a class="project-link" href="../McLarenSite/McLaren.html">
+            <a class="project-link" href="../McLarenSite/index.html">
               Ver projeto
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -808,7 +848,7 @@
 
         <!-- SneakerStreet -->
         <article class="project-card">
-          <img src="imagens/SneakerStoreProject.jpeg" alt="Projeto SneakerStreet" class="project-img" />
+          <img src="assets/img/SneakerStoreProject.jpeg" loading="lazy" alt="Projeto SneakerStreet" class="project-img" />
           <div class="project-overlay"></div>
           <div class="project-content">
             <span class="project-type">E-commerce · UI · Web</span>
@@ -821,7 +861,7 @@
               <span>Produto</span>
               <span>Estrutura web</span>
             </div>
-            <a class="project-link" href="../SneakerStore/SneakerStreet.html">
+            <a class="project-link" href="../SneakerStore/index.html">
               Ver projeto
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -833,7 +873,7 @@
         <!-- EVPM -->
         <article class="project-card">
           <div class="project-logo-thumb">
-            <img src="imagens/EVPM em Palco.jpg" alt="EVPM" />
+            <img src="assets/img/EVPM em Palco.jpg" loading="lazy" alt="EVPM" />
           </div>
           <div class="project-overlay"></div>
           <div class="project-content">
@@ -859,7 +899,7 @@
         <!-- TAIPAM -->
         <article class="project-card">
           <div class="project-logo-thumb">
-            <img src="imagens/TAIPAM em Palco.jpg" alt="TAIPAM" />
+            <img src="assets/img/TAIPAM em Palco.jpg" loading="lazy" alt="TAIPAM" />
           </div>
           <div class="project-overlay"></div>
           <div class="project-content">
@@ -1009,22 +1049,6 @@
     </div>
   </footer>
 
-  <script>
-    const nav = document.getElementById("nav");
-    window.addEventListener("scroll", () => {
-      nav.classList.toggle("scrolled", window.scrollY > 40);
-    }, { passive: true });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
-  </script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
