@@ -337,3 +337,23 @@ input[type="range"]::-webkit-slider-thumb {
   gap: 14px;
 }
 @media (max-width: 600px) { .sensitivity-grid { grid-template-columns: 1fr; } }
+
+/* ══ Accessibility ══ */
+
+:focus-visible {
+  outline: 2px solid var(--A);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+input[type="number"]:focus-visible,
+input[type="range"]:focus-visible {
+  outline: 2px solid var(--A);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

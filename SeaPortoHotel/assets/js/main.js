@@ -1,3 +1,27 @@
+/* ── Mobile nav hamburger ── */
+const navHamburger = document.getElementById('navHamburger');
+const mobileNav = document.getElementById('mobileNav');
+
+if (navHamburger && mobileNav) {
+  navHamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    navHamburger.classList.toggle('active', isOpen);
+    navHamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    mobileNav.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+}
+
+function closeMobileNav() {
+  if (mobileNav) {
+    mobileNav.classList.remove('open');
+    navHamburger.classList.remove('active');
+    navHamburger.setAttribute('aria-expanded', 'false');
+    mobileNav.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+}
+
 /* ── Scroll reveal ── */
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => {

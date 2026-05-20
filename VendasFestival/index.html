@@ -35,35 +35,35 @@
       <div class="field">
         <div class="field-name">Custo do barril</div>
         <div class="input-wrap">
-          <input type="number" id="barrelCost" value="95" min="1" step="1" oninput="calc(true)">
+          <input type="number" id="barrelCost" value="95" min="1" step="1" oninput="calc(true)" aria-label="Custo do barril em euros">
           <span class="unit">€</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Volume <small>Litros</small></div>
         <div class="input-wrap">
-          <input type="number" id="barrelL" value="50" min="1" step="1" oninput="calc(true)">
+          <input type="number" id="barrelL" value="50" min="1" step="1" oninput="calc(true)" aria-label="Volume do barril em litros">
           <span class="unit">L</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Copo fino <small>Centilitros</small></div>
         <div class="input-wrap">
-          <input type="number" id="copoCL" value="28" min="1" step="1" oninput="calc(true)">
+          <input type="number" id="copoCL" value="28" min="1" step="1" oninput="calc(true)" aria-label="Volume do copo fino em centilitros">
           <span class="unit">cl</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Nº de barris <small>Total do evento</small></div>
         <div class="input-wrap">
-          <input type="number" id="nBarrels" value="15" min="1" step="1" oninput="calc(true)">
+          <input type="number" id="nBarrels" value="15" min="1" step="1" oninput="calc(true)" aria-label="Número total de barris no evento">
           <span class="unit">un</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Barris devolvidos <small>Não abertos, sem custo</small></div>
         <div class="input-wrap">
-          <input type="number" id="nReturned" value="0" min="0" step="1" oninput="calc(true)">
+          <input type="number" id="nReturned" value="0" min="0" step="1" oninput="calc(true)" aria-label="Barris devolvidos não abertos">
           <span class="unit">un</span>
         </div>
       </div>
@@ -74,35 +74,35 @@
       <div class="field">
         <div class="field-name">Sinistros <small>Derrame, resíduos</small></div>
         <div class="input-wrap">
-          <input type="number" id="sinRate" value="5" min="0" max="50" step="0.5" oninput="calc(true)">
+          <input type="number" id="sinRate" value="5" min="0" max="50" step="0.5" oninput="calc(true)" aria-label="Taxa de sinistros em percentagem">
           <span class="unit">%</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Nº de tunas</div>
         <div class="input-wrap">
-          <input type="number" id="nTunas" value="6" min="0" step="1" oninput="calc(true)">
+          <input type="number" id="nTunas" value="6" min="0" step="1" oninput="calc(true)" aria-label="Número de tunas no evento">
           <span class="unit">un</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Pessoas por tuna <small>Média</small></div>
         <div class="input-wrap">
-          <input type="number" id="avgPessoas" value="25" min="0" step="1" oninput="calc(true)">
+          <input type="number" id="avgPessoas" value="25" min="0" step="1" oninput="calc(true)" aria-label="Média de pessoas por tuna">
           <span class="unit">un</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Senhas por pessoa <small>Cortesia</small></div>
         <div class="input-wrap">
-          <input type="number" id="nSenhas" value="3" min="0" step="1" oninput="calc(true)">
+          <input type="number" id="nSenhas" value="3" min="0" step="1" oninput="calc(true)" aria-label="Senhas de cortesia por pessoa">
           <span class="unit">un</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Copo próprio <small>% que traz o seu copo</small></div>
         <div class="input-wrap">
-          <input type="number" id="ownCup" value="50" min="0" max="100" step="5" oninput="calc(true)">
+          <input type="number" id="ownCup" value="50" min="0" max="100" step="5" oninput="calc(true)" aria-label="Percentagem que traz copo próprio">
           <span class="unit">%</span>
         </div>
       </div>
@@ -113,14 +113,14 @@
       <div class="field plan-A">
         <div class="field-name">Preço fino</div>
         <div class="input-wrap">
-          <input type="number" id="aFino" value="1.00" min="0.01" step="0.05" oninput="calc(true)">
+          <input type="number" id="aFino" value="1.00" min="0.01" step="0.05" oninput="calc(true)" aria-label="Plano A: preço do fino em euros">
           <span class="unit">€</span>
         </div>
       </div>
       <div class="field plan-A">
         <div class="field-name">Venda do copo <small>Fica com ele, sem retorno</small></div>
         <div class="input-wrap">
-          <input type="number" id="aCopo" value="1.00" min="0" step="0.50" oninput="calc(true)">
+          <input type="number" id="aCopo" value="1.00" min="0" step="0.50" oninput="calc(true)" aria-label="Plano A: preço de venda do copo em euros">
           <span class="unit">€</span>
         </div>
       </div>
@@ -131,21 +131,21 @@
       <div class="field plan-B">
         <div class="field-name">Preço fino</div>
         <div class="input-wrap">
-          <input type="number" id="bFino" value="0.50" min="0.01" step="0.05" oninput="calc(true)">
+          <input type="number" id="bFino" value="0.50" min="0.01" step="0.05" oninput="calc(true)" aria-label="Plano B: preço do fino em euros">
           <span class="unit">€</span>
         </div>
       </div>
       <div class="field plan-B">
         <div class="field-name">Caução copo</div>
         <div class="input-wrap">
-          <input type="number" id="bCopo" value="2.00" min="0" step="0.50" oninput="calc(true)">
+          <input type="number" id="bCopo" value="2.00" min="0" step="0.50" oninput="calc(true)" aria-label="Plano B: valor da caução do copo em euros">
           <span class="unit">€</span>
         </div>
       </div>
       <div class="field plan-B">
         <div class="field-name">Devolução copos</div>
         <div class="input-wrap">
-          <input type="number" id="bRet" value="30" min="0" max="100" step="5" oninput="calc(true)">
+          <input type="number" id="bRet" value="30" min="0" max="100" step="5" oninput="calc(true)" aria-label="Plano B: taxa de devolução de copos em percentagem">
           <span class="unit">%</span>
         </div>
       </div>
@@ -156,28 +156,28 @@
       <div class="field">
         <div class="field-name">Finos por pack</div>
         <div class="input-wrap">
-          <input type="number" id="packFinos" value="12" min="1" step="1" oninput="calc(true)">
+          <input type="number" id="packFinos" value="12" min="1" step="1" oninput="calc(true)" aria-label="Número de finos por pack">
           <span class="unit">un</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Preço do pack</div>
         <div class="input-wrap">
-          <input type="number" id="packPrice" value="10.00" min="0.01" step="0.50" oninput="calc(true)">
+          <input type="number" id="packPrice" value="10.00" min="0.01" step="0.50" oninput="calc(true)" aria-label="Preço do pack de finos em euros">
           <span class="unit">€</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Copos oferecidos <small>Por pack</small></div>
         <div class="input-wrap">
-          <input type="number" id="packCups" value="0" min="0" step="1" oninput="calc(true)">
+          <input type="number" id="packCups" value="0" min="0" step="1" oninput="calc(true)" aria-label="Copos oferecidos por pack">
           <span class="unit">un</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Custo unitário do copo <small>Descontado do pack</small></div>
         <div class="input-wrap">
-          <input type="number" id="cupCost" value="0.36" min="0" step="0.01" oninput="calc(true)">
+          <input type="number" id="cupCost" value="0.36" min="0" step="0.01" oninput="calc(true)" aria-label="Custo unitário do copo em euros">
           <span class="unit">€</span>
         </div>
       </div>
@@ -192,7 +192,7 @@
       <div class="field">
         <div class="field-name">% das vendas em pack</div>
         <div class="input-wrap">
-          <input type="number" id="packRate" value="25" min="0" max="100" step="5" oninput="calc(true)">
+          <input type="number" id="packRate" value="25" min="0" max="100" step="5" oninput="calc(true)" aria-label="Percentagem das vendas em pack">
           <span class="unit">%</span>
         </div>
       </div>
@@ -211,14 +211,14 @@
       <div class="field">
         <div class="field-name">Senhas HH <small>Nº de finos a preço reduzido</small></div>
         <div class="input-wrap">
-          <input type="number" id="hhFinos" value="100" min="1" step="10" oninput="calc(true)">
+          <input type="number" id="hhFinos" value="100" min="1" step="10" oninput="calc(true)" aria-label="Número de senhas Happy Hour a preço reduzido">
           <span class="unit">un</span>
         </div>
       </div>
       <div class="field">
         <div class="field-name">Preço senha HH</div>
         <div class="input-wrap">
-          <input type="number" id="hhPrice" value="0.50" min="0.01" step="0.05" oninput="calc(true)">
+          <input type="number" id="hhPrice" value="0.50" min="0.01" step="0.05" oninput="calc(true)" aria-label="Preço da senha Happy Hour em euros">
           <span class="unit">€</span>
         </div>
       </div>
@@ -250,7 +250,7 @@
         <span class="lbl">Finos vendidos</span>
         <span class="val" id="soldVal">80 finos</span>
       </div>
-      <input type="range" id="soldSlider" min="0" max="200" value="0" oninput="window._sliderTriggered=true;calc();window._sliderTriggered=false;">
+      <input type="range" id="soldSlider" min="0" max="200" value="0" oninput="window._sliderTriggered=true;calc();window._sliderTriggered=false;" aria-label="Número de finos vendidos">
       <div class="slider-hint"><span>0</span><span id="sliderMax">200</span></div>
       <div class="quick-btns" id="quickBtns"></div>
     </div>

@@ -74,7 +74,17 @@
     <li><a href="#seo">Google</a></li>
     <li><a href="#posts">Os Posts</a></li>
   </ul>
+  <button type="button" class="nav-hamburger" id="navHamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <a href="#diagnostico" onclick="closeMobileNav()">Diagnóstico</a>
+  <a href="#concorrencia" onclick="closeMobileNav()">Benchmarking</a>
+  <a href="#seo" onclick="closeMobileNav()">Google</a>
+  <a href="#posts" onclick="closeMobileNav()">Os Posts</a>
+</div>
 
 <!-- HERO -->
 <section class="hero" id="hero">
@@ -145,6 +155,7 @@
     <h2 class="s-title light reveal">A concorrência está<br><em>a dormir.</em></h2>
     <div class="s-rule reveal" aria-hidden="true"></div>
     <p class="s-lead light reveal">Analisei os 3 concorrentes diretos 4 estrelas em Matosinhos. A oportunidade é clara: nenhum ocupa o espaço de voz autêntica do destino nas redes sociais.</p>
+    <div class="table-scroll">
     <table class="comp-table reveal" aria-label="Comparação com concorrentes">
       <thead>
         <tr>
@@ -182,6 +193,7 @@
         </tr>
       </tbody>
     </table>
+    </div><!-- /.table-scroll -->
     <blockquote class="bench-quote reveal">
       <p>"Nenhum concorrente conta histórias sobre Matosinhos com autenticidade. Há espaço para o Sea Porto ser <em>a voz do destino</em> — e não apenas mais um hotel a vender quartos."</p>
     </blockquote>

@@ -133,7 +133,7 @@ nav {
 .section-wrap { max-width: var(--max-w); margin:0 auto; }
 .section-label {
   display:inline-flex; align-items:center; gap:10px;
-  font-size:10px; letter-spacing:4px; text-transform:uppercase;
+  font-size:11px; letter-spacing:4px; text-transform:uppercase;
   color:var(--orange); font-weight:600; margin-bottom:14px;
 }
 .section-label::before { content:''; width:20px; height:1px; background:var(--orange); }
@@ -198,7 +198,7 @@ img ~ .img-ph { display:none !important; }
 
 .hero-eyebrow {
   display:inline-flex; align-items:center; gap:10px;
-  font-size:10px; letter-spacing:4px; text-transform:uppercase;
+  font-size:11px; letter-spacing:4px; text-transform:uppercase;
   color:var(--orange); font-weight:600; margin-bottom:18px;
   opacity:0; animation:fadeUp .8s .5s forwards;
 }
@@ -266,7 +266,7 @@ img ~ .img-ph { display:none !important; }
 .stat:last-child  { border-right:none; padding-right:0; }
 .stat-value { font-family:'Bebas Neue',sans-serif; font-size:30px; color:#fff; line-height:1; }
 .stat-value small { font-size:16px; color:var(--orange); }
-.stat-label { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-top:4px; }
+.stat-label { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-top:4px; }
 
 /* ══════════════════════════════════════
    MODELS — fixed total height, accordion
@@ -339,12 +339,12 @@ img ~ .img-ph { display:none !important; }
 }
 .model-card.active .model-info { opacity:1; transform:translateY(0); pointer-events:auto; }
 
-.model-tag  { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--orange); font-weight:600; margin-bottom:5px; }
+.model-tag  { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--orange); font-weight:600; margin-bottom:5px; }
 .model-name { font-family:'Bebas Neue',sans-serif; font-size:30px; letter-spacing:1px; color:#fff; margin-bottom:6px; }
 .model-desc { font-size:12px; line-height:1.65; color:var(--muted); margin-bottom:14px; flex:1; overflow:hidden; }
 
 .model-specs { display:flex; gap:14px; border-top:1px solid var(--border); padding-top:12px; flex-wrap:wrap; flex-shrink:0; }
-.spec { font-size:10px; color:var(--muted); }
+.spec { font-size:11px; color:var(--muted); }
 .spec strong { display:block; font-family:'Bebas Neue',sans-serif; font-size:20px; color:#fff; font-weight:400; }
 
 .model-cta { margin-top:14px; flex-shrink:0; }
@@ -454,7 +454,7 @@ footer { background:#080809; padding:52px var(--side); border-top:1px solid var(
 }
 .footer-brand .nav-logo { display:block; margin-bottom:12px; }
 .footer-brand p { font-size:13px; color:var(--muted); line-height:1.7; max-width:220px; }
-.footer-col h4 { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#fff; font-weight:600; margin-bottom:16px; }
+.footer-col h4 { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#fff; font-weight:600; margin-bottom:16px; }
 .footer-col ul { list-style:none; }
 .footer-col ul li { margin-bottom:9px; }
 .footer-col ul a { font-size:13px; color:var(--muted); text-decoration:none; transition:color .2s; }
@@ -565,4 +565,32 @@ footer { background:#080809; padding:52px var(--side); border-top:1px solid var(
   .hero-actions .btn-ghost { width:100%; text-align:center; }
   .footer-inner { grid-template-columns:1fr; }
   .stat { flex:0 0 100%; }
+}
+
+/* ══ Accessibility ══ */
+
+/* Focus ring for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.btn-primary:focus-visible,
+.btn-ghost:focus-visible,
+.nav-cta:focus-visible { outline-offset: 4px; }
+
+/* Respect user's reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero-eyebrow,
+  .hero-title,
+  .hero-subtitle,
+  .hero-actions,
+  .hero-stats,
+  .hero-car-wrap { opacity: 1; transform: none; }
 }
