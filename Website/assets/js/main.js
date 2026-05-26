@@ -45,10 +45,13 @@ const observer = new IntersectionObserver((entries) => {
     const el = entry.target;
 
     if (el.classList.contains("projects-grid")) {
+      el.classList.add("in");
       staggerReveal(el.querySelectorAll(".project-card"));
     } else if (el.classList.contains("skills-list")) {
+      el.classList.add("in");
       staggerReveal(el.querySelectorAll(".skill-row"), 0, 80);
     } else if (el.classList.contains("timeline")) {
+      el.classList.add("in");
       staggerReveal(el.querySelectorAll(".timeline-item"), 0, 100);
     } else {
       el.classList.add("in");
