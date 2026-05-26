@@ -789,6 +789,14 @@ footer { padding: 24px 0 36px; position: relative; z-index: 1; }
 }
 .btn-primary:focus-visible { outline-color: var(--bg); }
 
+/* Fallback: se JS não correr, tudo fica visível */
+.no-js .project-card,
+.no-js .skill-row,
+.no-js .timeline-item {
+  opacity: 1;
+  transform: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -797,9 +805,9 @@ footer { padding: 24px 0 36px; position: relative; z-index: 1; }
     scroll-behavior: auto !important;
   }
   .reveal, .project-card, .skill-row, .timeline-item {
-    opacity: 1;
-    transform: none;
-    transition: none;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }
 
