@@ -1,0 +1,46 @@
+# Portfólio — Diogo Silva
+
+Site pessoal, single-owner: marketing digital, SEO, conteúdo, web. Serve também como índice de projetos (`projects.html`).
+
+## Stack
+
+- **Frontend:** HTML + CSS + JS vanilla, sem build step.
+- **Backend:** nenhum.
+- **Base de dados:** nenhuma.
+- **Estilos:** CSS puro com custom properties (`:root` em `assets/css/style.css`).
+- **Testes:** nenhum.
+
+## Como correr
+
+Abrir `index.html` no browser, ou:
+
+```bash
+npx serve .
+```
+
+## Estrutura
+
+- `assets/css/style.css` — base partilhada entre páginas (reset, nav, footer, botões, `.reveal`). Mexer aqui afeta as duas páginas.
+- `assets/css/home.css` / `assets/css/projects.css` — só o que é exclusivo de cada página. Classe `.project-card` tem implementações **diferentes** em cada ficheiro (cartão grande com overlay no index, cartão de catálogo no projects) — não copiar estilos de um para o outro sem verificar o contexto.
+- `assets/js/main.js` / `assets/js/projects.js` — cada página carrega só o seu próprio script.
+
+## Convenções
+
+- Ficheiros CSS/JS `kebab-case` ou `camelCase.js` conforme o `universal-project-structure.pdf` do utilizador.
+- Imagens em `assets/img/`, nome descritivo (não `img1.jpg`).
+
+## Regras deste projeto
+
+- Site 100% estático — não introduzir framework, bundler ou dependências sem pedido explícito.
+- Cada projeto novo entra em **dois sítios**: cartão em destaque no `index.html` (secção `#projetos`) e cartão completo no `projects.html` (grelha com filtro `data-category`).
+- Logos com fundo sólido próprio (branco, cor de marca) usam a variante `.project-logo-thumb.framed` — evita que o filtro `grayscale`/`brightness` do cartão padrão estrague o logo.
+
+## Decisões tomadas
+
+- 2026-08-04 — Reestruturado de `index.html`/`projects.html` com CSS e JS inline para `assets/css/` + `assets/js/`, seguindo o template "Estático HTML" do `universal-project-structure.pdf` do utilizador. Motivo: ficheiros inline de 30k+ chars eram impossíveis de editar em segurança.
+- 2026-08-04 — Pasta `imagens/` renomeada para `assets/img/` (convenção do template).
+- 2026-08-04 — Projeto DomusTech (`https://esdomustech.vercel.app/`) adicionado como mais recente, com o logo oficial da marca como capa (`assets/img/domustech-logo.jpg`), usando a variante `.project-logo-thumb.framed`.
+
+## Não fazer
+
+- Não juntar `home.css` e `projects.css` num só ficheiro — os dois definem `.project-card` de forma incompatível de propósito.
