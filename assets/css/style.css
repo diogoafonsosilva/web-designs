@@ -204,6 +204,25 @@ section { padding: 110px 0; position: relative; z-index: 1; }
   font-weight: 800;
   user-select: none;
 }
+.section-title-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.section-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+.section-link:hover {
+  color: var(--text, #fff);
+  gap: 10px;
+}
 
 /* FOOTER */
 footer { padding: 28px 0 40px; position: relative; z-index: 1; }
