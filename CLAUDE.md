@@ -39,7 +39,8 @@ npx serve .
 
 - 2026-08-04 — Reestruturado de `index.html`/`projects.html` com CSS e JS inline para `assets/css/` + `assets/js/`, seguindo o template "Estático HTML" do `universal-project-structure.pdf` do utilizador. Motivo: ficheiros inline de 30k+ chars eram impossíveis de editar em segurança.
 - 2026-08-04 — Pasta `imagens/` renomeada para `assets/img/` (convenção do template).
-- 2026-08-04 — Projeto DomusTech (`https://esdomustech.vercel.app/`) adicionado como mais recente, com o logo oficial da marca como capa (`assets/img/domustech-logo.jpg`), usando a variante `.project-logo-thumb.framed`.
+- 2026-08-04 — Projeto EsDomusTech (`https://esdomustech.lovable.app/`) adicionado como mais recente, com o logo oficial da marca como capa (`assets/img/domustech-logo.jpg`), usando a variante `.project-logo-thumb.framed`.
+- 2026-08-07 — Nome da marca corrigido de "DomusTech" para "EsDomusTech" em todo o site.
 
 ## Não fazer
 
