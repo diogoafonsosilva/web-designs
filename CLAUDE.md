@@ -41,7 +41,7 @@ npx serve .
 - 2026-08-04 — Pasta `imagens/` renomeada para `assets/img/` (convenção do template).
 - 2026-08-04 — Projeto EsDomusTech (`https://esdomustech.lovable.app/`) adicionado como mais recente, com o logo oficial da marca como capa (`assets/img/domustech-logo.jpg`), usando a variante `.project-logo-thumb.framed`.
 - 2026-08-07 — Nome da marca corrigido de "DomusTech" para "EsDomusTech" em todo o site.
-- 2026-08-09 — Projeto "Fiat Flow Tracker" adicionado (index.html + projects.html). Usa thumb `.project-logo-thumb` com ícone SVG inline (sem asset de imagem). Sem live demo (a app só corre local, base de dados só existe na máquina do autor) — link é mailto "Pedir acesso" ao repo privado (`fiat-flow-demo` no GitHub).
+- 2026-08-09 — Projeto "Fiat Flow Tracker" adicionado (index.html + projects.html). Usa thumb `.project-logo-thumb` com ícone SVG inline (sem asset de imagem). Sem live demo (a app real só corre local, base de dados só existe na máquina do autor) — repo `fiat-flow-demo` no GitHub é público, link "Ver código" aponta direto para lá; quem quiser testar clona e corre local com o dataset fictício (persona Miguel Lopes) já incluído.
 
 ## Não fazer
 
