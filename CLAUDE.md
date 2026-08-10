@@ -42,6 +42,7 @@ npx serve .
 - 2026-08-04 — Projeto EsDomusTech (`https://esdomustech.lovable.app/`) adicionado como mais recente, com o logo oficial da marca como capa (`assets/img/domustech-logo.jpg`), usando a variante `.project-logo-thumb.framed`.
 - 2026-08-07 — Nome da marca corrigido de "DomusTech" para "EsDomusTech" em todo o site.
 - 2026-08-09 — Projeto "Fiat Flow Tracker" adicionado (index.html + projects.html). Usa thumb `.project-logo-thumb` com ícone SVG inline (sem asset de imagem). Link aponta para `https://fiat-flow-demo.vercel.app` — quem visita usa a interface diretamente, sem passar pelo repositório. Deploy dedicado do repo `fiat-flow-demo` (público no GitHub), dataset fictício (persona Miguel Lopes), base efémera em `/tmp`. App pessoal real (`fiat-flow-tracker`) continua privada, correndo só localmente.
+- 2026-08-10 — Projeto "L'Essence Atelier" adicionado (index.html + projects.html), a substituir o placeholder "Próximo projeto" de e-commerce em construção. Loja de perfumaria fictícia com admin ao estilo Shopify (nome interno do repo: `rastro`, pasta local `Lovable/L'Essence Atelier`). Capa reaproveitada do `og-cover.jpg` do próprio projeto (`assets/img/lessence-atelier-cover.jpg`). Link aponta para `https://lessence-atelier.vercel.app`. Ficheiro placeholder antigo `ecommerce-proximo-projeto-cover.jpg` removido por ficar sem uso.
 
 ## Não fazer
 

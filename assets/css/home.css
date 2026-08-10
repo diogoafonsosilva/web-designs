@@ -472,6 +472,8 @@
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { min-height: auto; order: -1; padding-top: 30px; }
   .photo-card { max-width: 420px; }
+  .mini-card.top-right { right: 12px; }
+  .mini-card.bottom-left { left: 12px; }
   .hero-stats { grid-template-columns: 1fr; }
   .projects-grid, .skills-grid { grid-template-columns: 1fr; }
   .timeline-item { grid-template-columns: 1fr; }
@@ -485,6 +487,6 @@
   .project-card { min-height: 420px; }
   .project-desc { max-width: 100%; }
   .contact-box { padding: 32px 22px; }
-  .mini-card.top-right { right: 0; top: 24px; }
-  .mini-card.bottom-left { left: 0; bottom: 24px; }
+  .mini-card.top-right { right: 12px; top: 24px; }
+  .mini-card.bottom-left { left: 12px; bottom: 24px; }
 }
