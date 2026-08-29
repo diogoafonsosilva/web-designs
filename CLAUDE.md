@@ -44,6 +44,7 @@ npx serve .
 - 2026-08-09 — Projeto "Fiat Flow Tracker" adicionado (index.html + projects.html). Usa thumb `.project-logo-thumb` com ícone SVG inline (sem asset de imagem). Link aponta para `https://fiat-flow-demo.vercel.app` — quem visita usa a interface diretamente, sem passar pelo repositório. Deploy dedicado do repo `fiat-flow-demo` (público no GitHub), dataset fictício (persona Miguel Lopes), base efémera em `/tmp`. App pessoal real (`fiat-flow-tracker`) continua privada, correndo só localmente.
 - 2026-08-10 — Projeto "L'Essence Atelier" adicionado (index.html + projects.html), a substituir o placeholder "Próximo projeto" de e-commerce em construção. Loja de perfumaria fictícia com admin ao estilo Shopify (nome interno do repo: `rastro`, pasta local `Lovable/L'Essence Atelier`). Capa reaproveitada do `og-cover.jpg` do próprio projeto (`assets/img/lessence-atelier-cover.jpg`). Link aponta para `https://lessence-atelier.vercel.app`. Ficheiro placeholder antigo `ecommerce-proximo-projeto-cover.jpg` removido por ficar sem uso.
 - 2026-08-11 — Link do EsDomusTech mudado de `https://esdomustech.lovable.app/` para `https://esdomustech.vercel.app/` (index.html + projects.html).
+- 2026-08-29 — SneakerStreet e McLaren removidos de `projects.html` (só existiam ali, não em index.html). Grelha reordenada para EsDomusTech → TAIPAM → Fiat Flow Tracker → EVPM → L'Essence Atelier. `visibleCount` atualizado de 7 para 5. Pastas `SneakerStore/` e `McLarenSite/` não apagadas, ficam só sem link no site.
 
 ## Não fazer
 
